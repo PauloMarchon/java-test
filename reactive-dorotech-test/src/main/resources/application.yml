@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  cassandra:
+    username: cassandra
+    password: cassandra
+    port: 9042
+    contact-points: 127.0.0.1
+    keyspace_name: products
+    schema-action: CREATE-IF-NOT-EXISTS
