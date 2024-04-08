@@ -9,3 +9,8 @@ spring:
     contact-points: 127.0.0.1
     keyspace_name: products
     schema-action: CREATE-IF-NOT-EXISTS
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: swagger-ui.html

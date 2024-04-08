@@ -3,19 +3,19 @@ package com.paulomarchon.reactivedorotechtest.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.cassandra.config.AbstractCassandraConfiguration;
+import org.springframework.data.cassandra.config.AbstractReactiveCassandraConfiguration;
 import org.springframework.data.cassandra.config.CqlSessionFactoryBean;
 import org.springframework.data.cassandra.config.SchemaAction;
 import org.springframework.data.cassandra.core.cql.keyspace.CreateKeyspaceSpecification;
 import org.springframework.data.cassandra.core.cql.keyspace.KeyspaceOption;
-import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
+import org.springframework.data.cassandra.repository.config.EnableReactiveCassandraRepositories;
 
 import java.util.Collections;
 import java.util.List;
 
 @Configuration
-@EnableCassandraRepositories
-public class CassandraConfig extends AbstractCassandraConfiguration {
+@EnableReactiveCassandraRepositories
+public class CassandraConfig extends AbstractReactiveCassandraConfiguration {
     @Value("${spring.cassandra.username}")
     private String username;
     @Value("${spring.cassandra.password}")

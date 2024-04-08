@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactiveDorotechTestApplication {
+public class ReactiveDorotechApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReactiveDorotechTestApplication.class, args);
+		SpringApplication.run(ReactiveDorotechApplication.class, args);
 	}
 }
